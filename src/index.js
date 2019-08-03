@@ -1,8 +1,10 @@
-require('dotenv').config();
-const express = require('express');
+const puppeteer = require('puppeteer');
 
-const app = express();
-const port = process.env.SERVER_PORT;
+(async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto('https://www.google.com');
+  await page.screenshot({path: './pics/example.png'});
 
-app.listen(port, () => console.log('Server Running at port ' + port));
-
+  await browser.close();
+})();
