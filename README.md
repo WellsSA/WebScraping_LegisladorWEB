@@ -6,9 +6,9 @@ Este é um projeto de Web Scraping na página [Legislador WEB](http://www.legisl
 - Crie um arquivo `.env` baseado no arquivo `.env.example` e configure com as variáveis de ambiente necessárias
 - Execute o comando `yarn cli` passando as devidas opções
   - Opções:
-    - `-h` ou `--help` para obter ajuda com as funcionalidades da cli
-    - `-s [valor]` ou `--search [valor]` extrair os resultados da busca pela palavra-chave passada
-    - Nota: Ao executar apenas `yarn cli` sem nenhuma opção, a CLI traz os resultados da busca da primeira página do [Legislador WEB](http://www.legislador.com.br/LegisladorWEB.ASP?WCI=ProjetoTramite&ID=20)
+    - `-h` ou `--help` para obter ajuda com as funcionalidades da cli. Exemplo: `yarn cli -h`
+    - `-s [valor]` ou `--search [valor]` extrair os resultados da busca pela palavra-chave passada. Exemplo `yarn cli -s transporte` ou `yarn cli --search escola`
+    - Nota: Ao executar apenas `yarn cli` sem nenhuma opção, a CLI traz os resultados da busca da primeira página do [Legislador WEB](http://www.legislador.com.br/LegisladorWEB.ASP?WCI=ProjetoTramite&ID=20). Exemplo: `yarn cli`
 - Voilá, projeto rodando.
 
 ### Anotações importantes
