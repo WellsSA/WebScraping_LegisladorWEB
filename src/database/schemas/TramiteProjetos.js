@@ -37,4 +37,4 @@ const TramiteProjetosSchema = new mongoose.Schema(
   }
 );
 
-export default mongoose.model('TramiteProjetosSchema', TramiteProjetosSchema);
+module.exports = mongoose.model('TramiteProjetosSchema', TramiteProjetosSchema);
