@@ -1,4 +1,4 @@
-const mongoose = require('../../config/mongodb');
+const mongoose = require('mongoose');
 
 const TramiteProjetosSchema = new mongoose.Schema(
   {
@@ -7,11 +7,11 @@ const TramiteProjetosSchema = new mongoose.Schema(
       required: true,
     },
     data: {
-      type: Date,
+      type: String,
       required: true,
     },
     situacao: {
-      type: Boolean,
+      type: String,
       required: true,
       default: false,
     },
@@ -37,4 +37,4 @@ const TramiteProjetosSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model('TramiteProjetosSchema', TramiteProjetosSchema);
+module.exports = mongoose.model('TramiteProjetos', TramiteProjetosSchema);
